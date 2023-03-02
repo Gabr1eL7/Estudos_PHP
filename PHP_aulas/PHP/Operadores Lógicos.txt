@@ -1,0 +1,25 @@
+False e true
+
+onde:
+false:0
+true:1
+
+são representados por 3 operadores
+
+
+
+Operador E (&&)
+
+Faz a analise de uma ou mais condições onde a saida
+obrigatoriamente tem que ser true(verdadeira) para
+todas elas.
+
+Operador OU (||)
+
+
+
+Operador NÃO (!)
+
+Faz a troca de valores, onde quando se tem um 
+valor true ele devolve false, quando false ele
+devolve true

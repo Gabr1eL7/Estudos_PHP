@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset = "utf-8">
+</head>
+
+<body>
+<?php
+
+    // Laço de repetição faça...enquanto
+	
+	$resp = 1;
+	
+	do {
+		echo  "</br> ***MENU DE SERVIÇOS***";
+		echo "</br> 1 - Cadastro de alunos";
+		echo "</br> 2 - Lançamento de Frequência";
+		echo "</br> 3 - Lançamento de Conteúdo";
+		echo "</br> 4 - Lançamento de Notas";
+		echo "</br> 5 - Sair";
+		
+		$opc = 1; //Entrada de dados
+		
+		switch($opc){
+			
+			case 1 : 
+			echo "</br> Cadastro de alunos";
+			echo "</br> Alimente os dados para cadastro";
+			break;
+			
+			case 2 : 
+			echo "</br> Lançamento de Frequência";
+			echo "</br> Verifique os alunos que faltaram";
+			break;
+			
+			case 5 : 
+			echo "</br> Sair";
+			echo "</br> Obrigado por usar nosso sistema";
+			break;
+			
+			default:
+			echo "</br> Opção invalida! Digite novamente";
+
+		}
+	}while($resp == 1);
+?>
+</body>
+</html>
