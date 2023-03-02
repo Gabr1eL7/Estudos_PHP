@@ -1,0 +1,398 @@
+Aluno: Gabriel da Silva Amancio
+RGM: 31365973
+
+
+⦁	Usando estrutura condicional desenvolva um código em PHP para ler (Nome, Dia, Mês, Ano de Nascimento). Com base nos dados de entrada calcule e imprima Nome, Idade e Signo do usuário e uma mensagem positiva.
+
+<html>
+
+<head>
+
+<meta charset = "utf - 8">
+
+</head>
+
+<body>
+</body>
+
+
+<?php
+
+$nome = "André";
+$diaNascimento = "29";
+$mesNascimento = "5";
+$anoNascimento = "2000";
+$anoBase = "2022";
+
+$idade = $anoBase - $anoNascimento;
+
+$msgPositiva = ["Mentalize coisas boas e elas acontecerão!","As críticas são a motivação para o sucesso.", 
+"Que a felicidade puxe uma cadeira e sente-se ao seu lado, para sempre!", "Todo dia é dia de viver.", "Tenha a mais legítima das ambições: ambicione ser feliz!"];
+$index = array_rand($msgPositiva,1);
+$msgAleatoria = $msgPositiva[$index];
+
+
+switch($mesNascimento){
+	
+	
+	case 1: 
+	if ($diaNascimento <20){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é CAPRICORNO.";
+        echo "</br> $msgAleatoria";
+		
+	}
+	else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é AQUÁRIO.";
+        echo "</br> $msgAleatoria";
+		
+	} break;
+	case 2: 
+	if($diaNascimento<19){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é AQUÁRIO.";
+       echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é PEIXES.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 3: 
+	if($diaNascimento<20){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é PEIXES.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é ÁRIES.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 4: 
+	if($diaNascimento<20){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é ÁRIES.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é TOURO.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 5: 
+	if($diaNascimento<20){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é TOURO.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é GÊMEOS.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 6: 
+	if($diaNascimento<22){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é GÊMEOS.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é CÂNCER.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 7: 
+	if($diaNascimento<22){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é CÂNCER.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é LEÃO.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 8: 
+	if($diaNascimento<22){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é LEÃO.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é VIRGEM.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 9: 
+	if($diaNascimento<22){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é VIRGEM.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é LIBRA.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 10: 
+	if($diaNascimento<21){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é LIBRA.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é ESCORPIÃO.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 11: 
+	if($diaNascimento<21){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é ESCORPIÃO.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é SAGITÁRIO.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	case 12: 
+	if($diaNascimento<21){
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é SAGITÁRIO.";
+        echo "</br> $msgAleatoria";
+		
+	}else{
+		
+		echo "</br>Olá, $nome seja muito bem vindo(a)";
+        echo "</br> Você tem atualmente $idade anos";
+        echo "</br> De acordo com sua data de nascimento seu signo é CAPRICORNO.";
+        echo "</br> $msgAleatoria";
+		
+	}break;
+	
+}
+
+?>
+
+</html>
+
+
+
+
+
+
+
+
+⦁	Usando estrutura condicional desenvolva um código em PHP para ler 3 valores inteiros (referente aos lados do triângulo) e determine se esses valores formam ou não um triângulo. Caso formem um triângulo, informe qual seu tipo: Isósceles, Equilátero ou Escaleno.
+
+
+<html>
+<head>
+
+<meta charset = "utf-8";>
+
+</head>
+
+
+<body>
+
+<?php
+
+$lado1 = 15;
+$lado2 = 10;
+$lado3 = 5;
+
+
+
+if($lado1 == $lado2 && $lado2 == $lado3 && $lado1 == $lado3){
+	
+	echo "</br> Triângulo EQUILÁTERO !";
+	
+}else if($lado1 == $lado2 && $lado1 != $lado3 || $lado2 == $lado3 && $lado2 != $lado1 || $lado1 == $lado3 && $lado1 != $lado2){
+	
+	echo "</br> Triângulo ISÓSCELES !";
+	
+}else{
+	echo "</br> Triângulo ESCALENO !";
+}
+
+
+?>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+⦁	Usando estrutura de OPERADORES crie um código PHP para uma calculadora básica para as 4 operações aritméticas padrão (SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO E DIVISÃO)
+
+
+
+<html>
+<head>
+
+<meta charset = "utf-8";>
+
+</head>
+
+
+<body>
+
+<?php
+
+$num1 = 10;
+$num2 = 2;
+
+
+$soma = $num1 + $num2;
+echo "</br> A soma de $num1 e $num2 é: ". $soma;
+
+$subt = $num1 - $num2;
+echo "</br> A subtração de $num1 e $num2 é: ". $subt;
+
+$mult = $num1 * $num2;
+echo "</br> A multiplicação de $num1 e $num2 é: ". $mult;
+
+$div = $num1 / $num2;
+echo "</br> A divisão de $num1 e $num2 é: ". $div;
+
+?>
+
+
+</body>
+
+</html>
+
+
+
+
+
+⦁	Usando estrutura condicional desenvolva um código em PHP para calculo do IMC (Índice de Massa Corpórea). O IMC de um indivíduo é obtido dividindo-se seu peso (em KG) por sua altura (M) ao quadrado. Com base no resultado, classifique o usuário de acordo com a interpretação sugerida na tabela abaixo, imprimindo os dados para o usuário com mensagem de cuidado com sua saúde:
+
+
+<html>
+<head>
+
+<meta charset = "utf-8";>
+
+</head>
+
+
+<body>
+
+<?php
+
+$nome = "Claytinho";
+$peso = 90;
+$altura = 1.73;
+
+
+$IMC = $peso / ($altura * $altura);
+
+
+if($IMC<=18.5){
+	echo "</br> Sr(a) $nome. Seu IMC é ". number_format($IMC, 2); 
+	echo "</br> Seu índice aponta: Abaixo do peso normal";
+	echo "</br> Seu peso está abaixo do indicado. Procure um médico especialista.";
+}else if($IMC>18.5 && $IMC <=25){
+	echo "</br> Sr(a) $nome. Seu IMC é ". number_format($IMC, 2);  
+	echo "</br> Seu índice aponta: Peso normal";
+	echo "</br> Parabéns você possui o peso ideal para sua altura :) Mantenha esse peso!";
+}else if($IMC>25 && $IMC <=30){
+	echo "</br> Sr(a) $nome. Seu IMC é ". number_format($IMC, 2); 
+	echo "</br> Seu índice aponta: Acima do peso normal";
+	echo "</br> Seu peso está um pouco acima do indicado. Recomenda-se a procura de um médico especialista.";
+}else if($IMC>30){
+	echo "</br> Sr(a) $nome. Seu IMC é ". number_format($IMC, 2); 
+	echo "</br> Seu índice aponta: Obesidade";
+	echo "</br> Seu peso está muito acima do indicado. Procure o quanto antes um médico especialista.";
+}
+
+?>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+⦁	Defina e exemplifique programação front-end e programação back-end.
+
+
+
+FRONT END
+Os servidores de internet fornecem dados para os clientes, vice e versa, mas o cliente (client-side) tem acesso a três tipos de tecnologia(HTML, CSS E JS) que são executadas em navegadores, como: Google Chrome, Edge, FireFox… Dessa forma, o termo Front End também pode ser interpretada como client side, que são todas as tecnologias relacionadas a interface, com contato direto com o cliente. Por exemplo, quando abrimos uma página de notícias ou de culinária, tudo que é visível, onde o usuário navega e interage é criada por um desenvolvedor front end (ou developer client side).
+BACK END
+Seguindo a mesma ideia, os servidores(server-side) rodam tecnologias como: PHP, NODEjs, JAVA… Assim, o desenvolvimento se relaciona na parte de trás da aplicação garantindo uma eficiência de acesso ao usuário. Dados como, armazenagem, estoque de mercadorias, banco de dados e segurança. Quando compramos uma camiseta em um site, por trás do site estático a uma comunicação com os servidores que realizam a troca de banco de dados e navegador.
+
